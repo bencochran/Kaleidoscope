@@ -22,6 +22,3 @@ xcuserdata
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
-
-## llvm build dor
-llvm-build/
