@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Kaleidoscope.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Either/Either.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/KaleidoscopeLang/KaleidoscopeLang.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Madness/Madness.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Prelude/Prelude.xcodeproj">
+   </FileRef>
+</Workspace>
