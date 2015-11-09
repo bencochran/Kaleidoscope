@@ -56,13 +56,6 @@
 			remoteGlobalIDString = B8B97E9D1BF018B900CCFC4B;
 			remoteInfo = Kaleidoscope;
 		};
-		B8B97ED11BF02E3000CCFC4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8B97E961BF018B900CCFC4B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8B97ECD1BF02D8800CCFC4B;
-			remoteInfo = llvm;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -331,7 +324,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B8B97ED21BF02E3000CCFC4B /* PBXTargetDependency */,
 			);
 			name = Kaleidoscope;
 			productName = Kaleidoscope;
@@ -439,11 +431,6 @@
 			isa = PBXTargetDependency;
 			target = B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */;
 			targetProxy = B8B97EAE1BF018B900CCFC4B /* PBXContainerItemProxy */;
-		};
-		B8B97ED21BF02E3000CCFC4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8B97ECD1BF02D8800CCFC4B /* llvm */;
-			targetProxy = B8B97ED11BF02E3000CCFC4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
