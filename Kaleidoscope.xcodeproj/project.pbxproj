@@ -524,6 +524,10 @@
 				);
 				INFOPLIST_FILE = Kaleidoscope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/../Frameworks $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/llvm-build/Debug/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope;
 				PRODUCT_NAME = kaleidoscope;
 			};
@@ -540,6 +544,10 @@
 				);
 				INFOPLIST_FILE = Kaleidoscope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/../Frameworks $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/llvm-build/Debug/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope;
 				PRODUCT_NAME = kaleidoscope;
 			};
