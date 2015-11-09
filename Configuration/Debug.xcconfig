@@ -1,0 +1,20 @@
+//
+//  Debug.xcconfig
+//  Kaleidoscope
+//
+//  Created by Ben Cochran on 11/8/15.
+//  Copyright © 2015 Ben Cochran. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+ONLY_ACTIVE_ARCH = YES
+DEBUG_INFORMATION_FORMAT = dwarf
+ENABLE_TESTABILITY = YES
+
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+
+GCC_OPTIMIZATION_LEVEL = 0
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+
+MTL_ENABLE_DEBUG_INFO = YES
