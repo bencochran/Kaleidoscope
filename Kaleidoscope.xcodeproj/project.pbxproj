@@ -27,6 +27,13 @@
 			remoteGlobalIDString = B8B97E9D1BF018B900CCFC4B;
 			remoteInfo = Kaleidoscope;
 		};
+		B8B97ED11BF02E3000CCFC4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8B97E961BF018B900CCFC4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8B97ECD1BF02D8800CCFC4B;
+			remoteInfo = llvm;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,7 +136,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B8B97EE71BF02F4900CCFC4B /* LLVM Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8B97EE81BF02F7800CCFC4B /* libLLVMCore.a */,
+			);
+			name = "LLVM Products";
+			path = "llvm-build/Debug/lib";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		B8B97ECD1BF02D8800CCFC4B /* llvm */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-B$(SRCROOT)/llvm-build -H$(SRCROOT)/External/llvm -DCMAKE_BUILD_TYPE=$(CONFIGURATION) -G Xcode";
+			buildConfigurationList = B8B97ECE1BF02D8800CCFC4B /* Build configuration list for PBXLegacyTarget "llvm" */;
+			buildPhases = (
+			);
+			buildToolPath = cmake;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = llvm;
+			passBuildSettingsInEnvironment = 1;
+			productName = llvm;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */ = {
@@ -144,6 +177,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B8B97ED21BF02E3000CCFC4B /* PBXTargetDependency */,
 			);
 			name = Kaleidoscope;
 			productName = Kaleidoscope;
@@ -185,6 +219,9 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = B8B97E9D1BF018B900CCFC4B;
 					};
+					B8B97ECD1BF02D8800CCFC4B = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = B8B97E991BF018B900CCFC4B /* Build configuration list for PBXProject "Kaleidoscope" */;
@@ -202,6 +239,7 @@
 			targets = (
 				B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */,
 				B8B97EAC1BF018B900CCFC4B /* KaleidoscopeTests */,
+				B8B97ECD1BF02D8800CCFC4B /* llvm */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +285,11 @@
 			isa = PBXTargetDependency;
 			target = B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */;
 			targetProxy = B8B97EAE1BF018B900CCFC4B /* PBXContainerItemProxy */;
+		};
+		B8B97ED21BF02E3000CCFC4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8B97ECD1BF02D8800CCFC4B /* llvm */;
+			targetProxy = B8B97ED11BF02E3000CCFC4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,6 +430,31 @@
 			};
 			name = Release;
 		};
+		B8B97ECF1BF02D8800CCFC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CMAKE_BUILD_TYPE = Debug;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8B97ED01BF02D8800CCFC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CMAKE_BUILD_TYPE = Release;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +484,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B8B97ECE1BF02D8800CCFC4B /* Build configuration list for PBXLegacyTarget "llvm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B97ECF1BF02D8800CCFC4B /* Debug */,
+				B8B97ED01BF02D8800CCFC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
