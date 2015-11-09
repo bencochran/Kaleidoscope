@@ -95,6 +95,7 @@
 		B83C7FF41BD2154100F0FD31 /* libLLVMX86Utils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLLVMX86Utils.a; sourceTree = "<group>"; };
 		B83C7FF61BD21C9600F0FD31 /* libLLVMMCJIT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLLVMMCJIT.a; sourceTree = "<group>"; };
 		B83C7FF81BD21C9900F0FD31 /* libLLVMOrcJIT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLLVMOrcJIT.a; sourceTree = "<group>"; };
+		B87811481BF04E1500C54D60 /* Kaleidoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kaleidoscope-Bridging-Header.h"; sourceTree = "<group>"; };
 		B8B97E9E1BF018B900CCFC4B /* kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B97EA81BF018B900CCFC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B97EAD1BF018B900CCFC4B /* KaleidoscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaleidoscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B8B97ECB1BF025C500CCFC4B /* main.swift */,
+				B87811481BF04E1500C54D60 /* Kaleidoscope-Bridging-Header.h */,
 				B8B97ECA1BF0207C00CCFC4B /* Supporting Files */,
 			);
 			path = Kaleidoscope;

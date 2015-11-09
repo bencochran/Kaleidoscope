@@ -11,3 +11,9 @@ import KaleidoscopeLang
 
 let ast = KaleidoscopeLang.parseTopLevelExpression("def add(a b) a + b")
 print(ast)
+
+func llvmError(reason: UnsafePointer<Int8>) {
+    // Breakpoint-able error handler
+    fatalError(String.fromCString(reason)!)
+}
+LLVMInstallFatalErrorHandler(llvmError)

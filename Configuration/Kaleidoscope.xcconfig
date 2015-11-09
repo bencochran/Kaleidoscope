@@ -17,6 +17,8 @@ INFOPLIST_FILE = Kaleidoscope/Info.plist
 PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope
 PRODUCT_NAME = kaleidoscope
 
+SWIFT_OBJC_BRIDGING_HEADER = Kaleidoscope/Kaleidoscope-Bridging-Header.h
+
 FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/Mac
 
 HEADER_SEARCH_PATHS = $(inherited) $(LLVM_PREFIX)/include
