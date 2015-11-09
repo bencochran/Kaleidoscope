@@ -7,35 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B83C7FBD1BD2140200F0FD31 /* libLLVMAnalysis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FBC1BD2140200F0FD31 /* libLLVMAnalysis.a */; };
-		B83C7FBF1BD2140800F0FD31 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FBE1BD2140800F0FD31 /* libLLVMAsmPrinter.a */; };
-		B83C7FC11BD2140E00F0FD31 /* libLLVMBitReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FC01BD2140E00F0FD31 /* libLLVMBitReader.a */; };
-		B83C7FC31BD2141500F0FD31 /* libLLVMBitWriter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FC21BD2141500F0FD31 /* libLLVMBitWriter.a */; };
-		B83C7FC51BD2141C00F0FD31 /* libLLVMCodeGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FC41BD2141C00F0FD31 /* libLLVMCodeGen.a */; };
-		B83C7FC71BD2146800F0FD31 /* libLLVMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FC61BD2146800F0FD31 /* libLLVMCore.a */; };
-		B83C7FC91BD2147000F0FD31 /* libLLVMExecutionEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FC81BD2147000F0FD31 /* libLLVMExecutionEngine.a */; };
-		B83C7FCB1BD2147800F0FD31 /* libLLVMInstCombine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FCA1BD2147800F0FD31 /* libLLVMInstCombine.a */; };
-		B83C7FCD1BD2147E00F0FD31 /* libLLVMInstrumentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FCC1BD2147E00F0FD31 /* libLLVMInstrumentation.a */; };
-		B83C7FD11BD2148E00F0FD31 /* libLLVMipa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FD01BD2148E00F0FD31 /* libLLVMipa.a */; };
-		B83C7FD31BD2149500F0FD31 /* libLLVMMC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FD21BD2149500F0FD31 /* libLLVMMC.a */; };
-		B83C7FD51BD2149900F0FD31 /* libLLVMMCDisassembler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FD41BD2149900F0FD31 /* libLLVMMCDisassembler.a */; };
-		B83C7FD71BD2149C00F0FD31 /* libLLVMMCParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FD61BD2149C00F0FD31 /* libLLVMMCParser.a */; };
-		B83C7FD91BD214A700F0FD31 /* libLLVMObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FD81BD214A700F0FD31 /* libLLVMObject.a */; };
-		B83C7FDB1BD214CF00F0FD31 /* libLLVMProfileData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FDA1BD214CF00F0FD31 /* libLLVMProfileData.a */; };
-		B83C7FDD1BD214E900F0FD31 /* libLLVMRuntimeDyld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FDC1BD214E900F0FD31 /* libLLVMRuntimeDyld.a */; };
-		B83C7FDF1BD214F000F0FD31 /* libLLVMScalarOpts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FDE1BD214F000F0FD31 /* libLLVMScalarOpts.a */; };
-		B83C7FE11BD214F800F0FD31 /* libLLVMSelectionDAG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FE01BD214F800F0FD31 /* libLLVMSelectionDAG.a */; };
-		B83C7FE31BD2150200F0FD31 /* libLLVMSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FE21BD2150200F0FD31 /* libLLVMSupport.a */; };
-		B83C7FE51BD2151500F0FD31 /* libLLVMTarget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FE41BD2151500F0FD31 /* libLLVMTarget.a */; };
-		B83C7FE71BD2151E00F0FD31 /* libLLVMTransformUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FE61BD2151E00F0FD31 /* libLLVMTransformUtils.a */; };
-		B83C7FE91BD2152800F0FD31 /* libLLVMX86AsmParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FE81BD2152800F0FD31 /* libLLVMX86AsmParser.a */; };
-		B83C7FEB1BD2152B00F0FD31 /* libLLVMX86AsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FEA1BD2152B00F0FD31 /* libLLVMX86AsmPrinter.a */; };
-		B83C7FED1BD2152E00F0FD31 /* libLLVMX86CodeGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FEC1BD2152E00F0FD31 /* libLLVMX86CodeGen.a */; };
-		B83C7FEF1BD2153300F0FD31 /* libLLVMX86Desc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FEE1BD2153300F0FD31 /* libLLVMX86Desc.a */; };
-		B83C7FF11BD2153900F0FD31 /* libLLVMX86Disassembler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FF01BD2153900F0FD31 /* libLLVMX86Disassembler.a */; };
-		B83C7FF31BD2153E00F0FD31 /* libLLVMX86Info.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FF21BD2153E00F0FD31 /* libLLVMX86Info.a */; };
-		B83C7FF51BD2154100F0FD31 /* libLLVMX86Utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FF41BD2154100F0FD31 /* libLLVMX86Utils.a */; };
-		B83C7FF91BD21C9900F0FD31 /* libLLVMOrcJIT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C7FF81BD21C9900F0FD31 /* libLLVMOrcJIT.a */; };
 		B8B97EB21BF018B900CCFC4B /* KaleidoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B97EB11BF018B900CCFC4B /* KaleidoscopeTests.swift */; };
 		B8B97EBD1BF0205400CCFC4B /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; };
 		B8B97EBE1BF0205400CCFC4B /* Either.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -134,6 +105,11 @@
 		B8B97EC11BF0206200CCFC4B /* Madness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Madness.framework; path = ../Carthage/Build/Mac/Madness.framework; sourceTree = "<group>"; };
 		B8B97EC21BF0206200CCFC4B /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = ../Carthage/Build/Mac/Prelude.framework; sourceTree = "<group>"; };
 		B8B97ECB1BF025C500CCFC4B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B8E0AB511BF07308002B5C8B /* Kaleidoscope.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Kaleidoscope.xcconfig; sourceTree = "<group>"; };
+		B8E0AB521BF074B1002B5C8B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		B8E0AB531BF0764F002B5C8B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		B8E0AB541BF07657002B5C8B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B8E0AB851BF08082002B5C8B /* Application-Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application-Common.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,35 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83C7FBD1BD2140200F0FD31 /* libLLVMAnalysis.a in Frameworks */,
-				B83C7FBF1BD2140800F0FD31 /* libLLVMAsmPrinter.a in Frameworks */,
-				B83C7FC11BD2140E00F0FD31 /* libLLVMBitReader.a in Frameworks */,
-				B83C7FC31BD2141500F0FD31 /* libLLVMBitWriter.a in Frameworks */,
-				B83C7FC51BD2141C00F0FD31 /* libLLVMCodeGen.a in Frameworks */,
-				B83C7FC71BD2146800F0FD31 /* libLLVMCore.a in Frameworks */,
-				B83C7FC91BD2147000F0FD31 /* libLLVMExecutionEngine.a in Frameworks */,
-				B83C7FCB1BD2147800F0FD31 /* libLLVMInstCombine.a in Frameworks */,
-				B83C7FCD1BD2147E00F0FD31 /* libLLVMInstrumentation.a in Frameworks */,
-				B83C7FD11BD2148E00F0FD31 /* libLLVMipa.a in Frameworks */,
-				B83C7FD31BD2149500F0FD31 /* libLLVMMC.a in Frameworks */,
-				B83C7FD51BD2149900F0FD31 /* libLLVMMCDisassembler.a in Frameworks */,
-				B83C7FD71BD2149C00F0FD31 /* libLLVMMCParser.a in Frameworks */,
-				B83C7FD91BD214A700F0FD31 /* libLLVMObject.a in Frameworks */,
-				B83C7FDB1BD214CF00F0FD31 /* libLLVMProfileData.a in Frameworks */,
-				B83C7FDD1BD214E900F0FD31 /* libLLVMRuntimeDyld.a in Frameworks */,
-				B83C7FDF1BD214F000F0FD31 /* libLLVMScalarOpts.a in Frameworks */,
-				B83C7FE11BD214F800F0FD31 /* libLLVMSelectionDAG.a in Frameworks */,
-				B83C7FE31BD2150200F0FD31 /* libLLVMSupport.a in Frameworks */,
-				B83C7FE51BD2151500F0FD31 /* libLLVMTarget.a in Frameworks */,
-				B83C7FE71BD2151E00F0FD31 /* libLLVMTransformUtils.a in Frameworks */,
-				B83C7FE91BD2152800F0FD31 /* libLLVMX86AsmParser.a in Frameworks */,
-				B83C7FEB1BD2152B00F0FD31 /* libLLVMX86AsmPrinter.a in Frameworks */,
-				B83C7FED1BD2152E00F0FD31 /* libLLVMX86CodeGen.a in Frameworks */,
-				B83C7FEF1BD2153300F0FD31 /* libLLVMX86Desc.a in Frameworks */,
-				B83C7FF11BD2153900F0FD31 /* libLLVMX86Disassembler.a in Frameworks */,
-				B83C7FF31BD2153E00F0FD31 /* libLLVMX86Info.a in Frameworks */,
-				B83C7FF51BD2154100F0FD31 /* libLLVMX86Utils.a in Frameworks */,
-				B83C7FF91BD21C9900F0FD31 /* libLLVMOrcJIT.a in Frameworks */,
 				B8B97EBD1BF0205400CCFC4B /* Either.framework in Frameworks */,
 				B8B97EC51BF0206200CCFC4B /* Madness.framework in Frameworks */,
 				B8B97EC71BF0206200CCFC4B /* Prelude.framework in Frameworks */,
@@ -192,6 +139,7 @@
 			children = (
 				B8B97EA01BF018B900CCFC4B /* Kaleidoscope */,
 				B8B97EB01BF018B900CCFC4B /* KaleidoscopeTests */,
+				B8E0AB501BF072B5002B5C8B /* Configuration */,
 				B8B97EE71BF02F4900CCFC4B /* LLVM Products */,
 				B8B97E9F1BF018B900CCFC4B /* Products */,
 			);
@@ -292,24 +240,19 @@
 			path = "llvm-build/Debug/lib";
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-		B8B97ECD1BF02D8800CCFC4B /* llvm */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "-B$(SRCROOT)/llvm-build -H$(SRCROOT)/External/llvm -DCMAKE_BUILD_TYPE=$(CONFIGURATION) -G Xcode";
-			buildConfigurationList = B8B97ECE1BF02D8800CCFC4B /* Build configuration list for PBXLegacyTarget "llvm" */;
-			buildPhases = (
+		B8E0AB501BF072B5002B5C8B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0AB511BF07308002B5C8B /* Kaleidoscope.xcconfig */,
+				B8E0AB851BF08082002B5C8B /* Application-Common.xcconfig */,
+				B8E0AB521BF074B1002B5C8B /* Common.xcconfig */,
+				B8E0AB531BF0764F002B5C8B /* Release.xcconfig */,
+				B8E0AB541BF07657002B5C8B /* Debug.xcconfig */,
 			);
-			buildToolPath = cmake;
-			buildWorkingDirectory = "";
-			dependencies = (
-			);
-			name = llvm;
-			passBuildSettingsInEnvironment = 1;
-			productName = llvm;
+			path = Configuration;
+			sourceTree = "<group>";
 		};
-/* End PBXLegacyTarget section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */ = {
@@ -365,9 +308,6 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = B8B97E9D1BF018B900CCFC4B;
 					};
-					B8B97ECD1BF02D8800CCFC4B = {
-						CreatedOnToolsVersion = 7.1;
-					};
 				};
 			};
 			buildConfigurationList = B8B97E991BF018B900CCFC4B /* Build configuration list for PBXProject "Kaleidoscope" */;
@@ -385,7 +325,6 @@
 			targets = (
 				B8B97E9D1BF018B900CCFC4B /* Kaleidoscope */,
 				B8B97EAC1BF018B900CCFC4B /* KaleidoscopeTests */,
-				B8B97ECD1BF02D8800CCFC4B /* llvm */,
 			);
 		};
 /* End PBXProject section */
@@ -437,119 +376,29 @@
 /* Begin XCBuildConfiguration section */
 		B8B97EB41BF018B900CCFC4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0AB541BF07657002B5C8B /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B8B97EB51BF018B900CCFC4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0AB531BF0764F002B5C8B /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		B8B97EB71BF018B900CCFC4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0AB511BF07308002B5C8B /* Kaleidoscope.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Kaleidoscope/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/../Frameworks $(inherited)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/llvm-build/Debug/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope;
-				PRODUCT_NAME = kaleidoscope;
 			};
 			name = Debug;
 		};
 		B8B97EB81BF018B900CCFC4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0AB511BF07308002B5C8B /* Kaleidoscope.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Kaleidoscope/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/../Frameworks $(inherited)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/llvm-build/Debug/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope;
-				PRODUCT_NAME = kaleidoscope;
 			};
 			name = Release;
 		};
@@ -576,31 +425,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.KaleidoscopeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaleidoscope.app/Contents/MacOS/Kaleidoscope";
-			};
-			name = Release;
-		};
-		B8B97ECF1BF02D8800CCFC4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CMAKE_BUILD_TYPE = Debug;
-				DEBUGGING_SYMBOLS = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B8B97ED01BF02D8800CCFC4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CMAKE_BUILD_TYPE = Release;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -633,14 +457,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		B8B97ECE1BF02D8800CCFC4B /* Build configuration list for PBXLegacyTarget "llvm" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8B97ECF1BF02D8800CCFC4B /* Debug */,
-				B8B97ED01BF02D8800CCFC4B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

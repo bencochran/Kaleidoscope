@@ -1,0 +1,18 @@
+//
+//  Application-Common.xcconfig
+//  Kaleidoscope
+//
+//  Created by Ben Cochran on 11/8/15.
+//  Copyright © 2015 Ben Cochran. All rights reserved.
+//
+
+DEAD_CODE_STRIPPING = NO
+
+LD_RUNPATH_SEARCH_PATHS = @executable_path/. @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/Frameworks
+
+SDKROOT = macosx
+MACOSX_DEPLOYMENT_TARGET = 10.11
+VALID_ARCHS = x86_64
+
+// Bitcode is invalid on OS X
+ENABLE_BITCODE = NO

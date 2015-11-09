@@ -1,0 +1,30 @@
+//
+//  Application.xcconfig
+//  Kaleidoscope
+//
+//  Created by Ben Cochran on 11/8/15.
+//  Copyright © 2015 Ben Cochran. All rights reserved.
+//
+
+// Set this to your llvm prefix. I’m sorry.
+LLVM_PREFIX = /usr/local/Cellar/llvm/3.7.0
+
+
+
+#include "Application-Common.xcconfig"
+
+INFOPLIST_FILE = Kaleidoscope/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.Kaleidoscope
+PRODUCT_NAME = kaleidoscope
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/Mac
+
+HEADER_SEARCH_PATHS = $(inherited) $(LLVM_PREFIX)/include
+LIBRARY_SEARCH_PATHS = $(inherited) $(LLVM_PREFIX)/lib
+
+LLVM_LIBRARIES = -lLLVMOrcJIT -lLLVMMCJIT -lLLVMX86Utils -lLLVMX86Info -lLLVMX86Disassembler -lLLVMX86Desc -lLLVMX86CodeGen -lLLVMX86AsmPrinter -lLLVMX86AsmParser -lLLVMTransformUtils -lLLVMTarget -lLLVMSupport -lLLVMSelectionDAG -lLLVMScalarOpts -lLLVMRuntimeDyld -lLLVMProfileData -lLLVMObject -lLLVMMCParser -lLLVMMCDisassembler -lLLVMMC -lLLVMipa -lLLVMInterpreter -lLLVMInstrumentation -lLLVMInstCombine -lLLVMExecutionEngine -lLLVMCore -lLLVMCodeGen -lLLVMBitWriter -lLLVMBitReader -lLLVMAsmPrinter -lLLVMAnalysis -lLLVMX86Disassembler -lLLVMAnalysis -lLLVMMCDisassembler -lLLVMX86CodeGen -lLLVMX86Desc -lLLVMipa -lLLVMTransformUtils -lLLVMInstrumentation -lLLVMInstCombine -lLLVMProfileData -lLLVMScalarOpts -lLLVMCodeGen -lLLVMAsmPrinter -lLLVMSelectionDAG -lLLVMCodeGen -lLLVMX86AsmParser -lLLVMX86Disassembler
+
+OTHER_LDFLAGS = $(inherited) -all_load -lc++ -lm -lz -lpthread -lcurses $(LLVM_LIBRARIES)
+
+GCC_ENABLE_CPP_RTTI = NO
+GCC_PREPROCESSOR_DEFINITIONS = __STDC_LIMIT_MACROS=1 __STDC_FORMAT_MACROS=1 __STDC_CONSTANT_MACROS=1
