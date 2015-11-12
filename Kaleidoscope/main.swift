@@ -9,7 +9,7 @@
 import Foundation
 import KaleidoscopeLang
 
-let ast = KaleidoscopeLang.parse("def add(a b) a + b")
+let ast = KaleidoscopeLang.parse("def add(a b) a + b;")
 print(ast)
 
 func llvmError(reason: UnsafePointer<Int8>) {
