@@ -1,4 +1,4 @@
 github "robrix/Prelude" "bd23a25d8c7c90a7a4b2505be65ad511c9d1db81"
 github "robrix/Either" "1.3.1"
-github "robrix/Madness" "91aa6268e75f185bc61f5d84d866ab60687324fa"
-github "bencochran/KaleidoscopeLang" "42b850f377f9ee587722cc8429c9bf93956dbfba"
+github "robrix/Madness" "a9dcf65f462d6df5ade36ae57f1b1eeb31278fde"
+github "bencochran/KaleidoscopeLang" "1d2f7ba4f773f9423e8b515e04f5777177904379"
