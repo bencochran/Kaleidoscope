@@ -10,3 +10,6 @@
 [submodule "Carthage/Checkouts/KaleidoscopeLang"]
 	path = Carthage/Checkouts/KaleidoscopeLang
 	url = https://github.com/bencochran/KaleidoscopeLang.git
+[submodule "Carthage/Checkouts/LLVM.swift"]
+	path = Carthage/Checkouts/LLVM.swift
+	url = https://github.com/bencochran/LLVM.swift.git

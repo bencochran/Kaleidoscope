@@ -1,1 +1,2 @@
 github "bencochran/KaleidoscopeLang" "master"
+github "bencochran/LLVM.swift" "master"
