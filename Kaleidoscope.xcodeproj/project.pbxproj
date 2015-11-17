@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8A9A6E61BFB2EFE00EC8D1A /* LLVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; };
+		B8A9A6E71BFB2EFE00EC8D1A /* LLVM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8B97EB21BF018B900CCFC4B /* KaleidoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B97EB11BF018B900CCFC4B /* KaleidoscopeTests.swift */; };
 		B8B97EBD1BF0205400CCFC4B /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; };
 		B8B97EBE1BF0205400CCFC4B /* Either.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,6 +42,7 @@
 				B8B97EC61BF0206200CCFC4B /* Madness.framework in Embed Frameworks */,
 				B8B97EC81BF0206200CCFC4B /* Prelude.framework in Embed Frameworks */,
 				B8B97EC41BF0206200CCFC4B /* KaleidoscopeLang.framework in Embed Frameworks */,
+				B8A9A6E71BFB2EFE00EC8D1A /* LLVM.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B87811481BF04E1500C54D60 /* Kaleidoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kaleidoscope-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LLVM.framework; path = ../Carthage/Build/Mac/LLVM.framework; sourceTree = "<group>"; };
 		B8B97E9E1BF018B900CCFC4B /* kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B97EA81BF018B900CCFC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B97EAD1BF018B900CCFC4B /* KaleidoscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaleidoscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +77,7 @@
 				B8B97EC51BF0206200CCFC4B /* Madness.framework in Frameworks */,
 				B8B97EC71BF0206200CCFC4B /* Prelude.framework in Frameworks */,
 				B8B97EC31BF0206200CCFC4B /* KaleidoscopeLang.framework in Frameworks */,
+				B8A9A6E61BFB2EFE00EC8D1A /* LLVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				B8B97ECB1BF025C500CCFC4B /* main.swift */,
-				B87811481BF04E1500C54D60 /* Kaleidoscope-Bridging-Header.h */,
 				B8B97ECA1BF0207C00CCFC4B /* Supporting Files */,
 			);
 			path = Kaleidoscope;
@@ -132,6 +135,7 @@
 				B8B97EC11BF0206200CCFC4B /* Madness.framework */,
 				B8B97EC21BF0206200CCFC4B /* Prelude.framework */,
 				B8B97EBC1BF0205400CCFC4B /* Either.framework */,
+				B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */,
 				B8B97EA81BF018B900CCFC4B /* Info.plist */,
 			);
 			name = "Supporting Files";
