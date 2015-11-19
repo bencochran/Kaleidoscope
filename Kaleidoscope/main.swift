@@ -8,8 +8,10 @@
 
 import Foundation
 import KaleidoscopeLang
+import LLVM
 import Either
 
+let context = CodegenContext(moduleName: "kaleidoscope", context: Context.globalContext)
 
 let lines = [
     "extern addThree(a b c);",
@@ -26,11 +28,19 @@ let result = lines
     .compact()
     // Analize the expressions
     .flatMap(Analyzer.analyze)
+    // Attempt to cast each Expression to Codegenable
+    .flatMapEach(attemptCast)
+    // Perform code generation in the context
+    .flatMapEach(codegenInContext(context))
 
 if case let .Left(error) = result {
     print("Failed: \(error)")
     exit(1)
-} else {
-    print("Success!")
-    exit(0)
 }
+
+guard let ir = context.module.string else {
+    print("Failed to generate IR")
+    exit(1)
+}
+
+print(ir)
