@@ -12,7 +12,7 @@ internal func codegenInContext(context: CodegenContext)(codegenable: Codegenable
 
 internal func attemptCast<T,U>(value: T) -> Either<Error, U> {
     guard let casted = value as? U else {
-        return .left(.codegenError("Unable to cast value of type `\(T.self)` to `\(U.self)`"))
+        return .left(Error(kind: .UnknownError, message: "Unable to cast value of type `\(T.self)` to `\(U.self)`"))
     }
     return .right(casted)
 }
