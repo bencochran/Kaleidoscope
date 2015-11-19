@@ -15,12 +15,12 @@ The project itself does its parsing with [KaleidoscopeLang][kaleidoscope-lang] a
    For homebrew this will typically be `/usr/local/Cellar/llvm/3.6.2`, for you it may be `/usr/local` or
    similar depending on your setup.
 
-1. Run!
+1. Open `Kaleidoscope.xcworkspace` and run it!
 
 ## Limitations
 
-* There’s no way to run the resulting LLVM IR code because there’s no way to represent `main`. See
-  [#4][issue-main].
+* There’s currently no way to run the resulting LLVM assembly because there’s no way to represent `main`.
+  See [#4][issue-main].
 
 * There’s no JIT like the Kaleidoscope tutorial has.
 
