@@ -6,7 +6,6 @@
 //  Copyright © 2015 Ben Cochran. All rights reserved.
 //
 
-import Foundation
 import KaleidoscopeLang
 import LLVM
 import Either
