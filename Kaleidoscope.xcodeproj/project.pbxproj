@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B8A9A6E61BFB2EFE00EC8D1A /* LLVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; };
 		B8A9A6E71BFB2EFE00EC8D1A /* LLVM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8A9A6EF1BFBE27C00EC8D1A /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */; };
 		B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7321BFD976E00EC8D1A /* Error.swift */; };
 		B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */; };
 		B8B97EB21BF018B900CCFC4B /* KaleidoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B97EB11BF018B900CCFC4B /* KaleidoscopeTests.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LLVM.framework; path = ../Carthage/Build/Mac/LLVM.framework; sourceTree = "<group>"; };
+		B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		B8A9A7321BFD976E00EC8D1A /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherExtensions.swift; sourceTree = "<group>"; };
 		B8B97E9E1BF018B900CCFC4B /* kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B8B97ECB1BF025C500CCFC4B /* main.swift */,
+				B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */,
 				B8A9A7321BFD976E00EC8D1A /* Error.swift */,
 				B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */,
 				B8B97ECA1BF0207C00CCFC4B /* Supporting Files */,
@@ -261,6 +264,7 @@
 				B8B97ECC1BF025C500CCFC4B /* main.swift in Sources */,
 				B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */,
 				B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */,
+				B8A9A6EF1BFBE27C00EC8D1A /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
