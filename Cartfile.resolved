@@ -1,4 +1,5 @@
+github "bencochran/LLVM.swift" "e31992709b6a8c850b15a953580702d22f6f9fc5"
 github "robrix/Prelude" "bd23a25d8c7c90a7a4b2505be65ad511c9d1db81"
 github "robrix/Either" "1.3.1"
-github "robrix/Madness" "a9dcf65f462d6df5ade36ae57f1b1eeb31278fde"
+github "robrix/Madness" "d9c7f949b8edf3f05e4284efa0d4b6274479ffd5"
 github "bencochran/KaleidoscopeLang" "1d2f7ba4f773f9423e8b515e04f5777177904379"

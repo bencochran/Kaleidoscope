@@ -8,6 +8,7 @@
 
 import Foundation
 import KaleidoscopeLang
+import LLVM
 
 let ast = KaleidoscopeLang.parse("def add(a b) a + b;")
 print(ast)

@@ -1,1 +1,2 @@
-github "bencochran/KaleidoscopeLang" "master"
+github "bencochran/KaleidoscopeLang" "1d2f7ba4f773f9423e8b515e04f5777177904379"
+github "bencochran/LLVM.swift" "e31992709b6a8c850b15a953580702d22f6f9fc5"
