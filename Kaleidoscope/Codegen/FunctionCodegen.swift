@@ -8,7 +8,6 @@ import KaleidoscopeLang
 import Either
 import Prelude
 
-
 extension FunctionExpression : Codegenable {
     func codegen(context: CodegenContext) -> Either<Error, ValueType> {
         return generateFunction(context).map(id)

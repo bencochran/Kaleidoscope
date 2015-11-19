@@ -9,8 +9,6 @@ import Either
 import Prelude
 
 extension NumberExpression : Codegenable {
-    typealias Result = RealConstant
-    
     func codegen(context: CodegenContext) -> Either<Error, ValueType> {
         return context.generateConstant(value).map(id)
     }
