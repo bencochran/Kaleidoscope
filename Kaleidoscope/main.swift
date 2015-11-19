@@ -10,6 +10,9 @@ import KaleidoscopeLang
 import LLVM
 import Either
 
+var stdout = OutputStream.Out
+var stderr = OutputStream.Err
+
 let context = CodegenContext(moduleName: "kaleidoscope", context: Context.globalContext)
 
 let lines = [
@@ -33,13 +36,13 @@ let result = lines
     .flatMapEach(codegenInContext(context))
 
 if case let .Left(error) = result {
-    print("Failed: \(error)")
+    print("Failed: \(error)", toStream: &stderr)
     exit(1)
 }
 
 guard let ir = context.module.string else {
-    print("Failed to generate IR")
+    print("Failed to generate IR", toStream: &stderr)
     exit(1)
 }
 
-print(ir)
+print(ir, toStream: &stdout)
