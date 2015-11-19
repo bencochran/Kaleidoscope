@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B8A9A6E61BFB2EFE00EC8D1A /* LLVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; };
 		B8A9A6E71BFB2EFE00EC8D1A /* LLVM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8A9A6EB1BFB363800EC8D1A /* CodegenContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A6EA1BFB363800EC8D1A /* CodegenContext.swift */; };
 		B8A9A6EF1BFBE27C00EC8D1A /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */; };
 		B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7321BFD976E00EC8D1A /* Error.swift */; };
 		B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		B8A9A6E51BFB2EFE00EC8D1A /* LLVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LLVM.framework; path = ../Carthage/Build/Mac/LLVM.framework; sourceTree = "<group>"; };
+		B8A9A6EA1BFB363800EC8D1A /* CodegenContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodegenContext.swift; sourceTree = "<group>"; };
 		B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		B8A9A7321BFD976E00EC8D1A /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherExtensions.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B8B97ECB1BF025C500CCFC4B /* main.swift */,
+				B8A9A6EA1BFB363800EC8D1A /* CodegenContext.swift */,
 				B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */,
 				B8A9A7321BFD976E00EC8D1A /* Error.swift */,
 				B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A9A6EB1BFB363800EC8D1A /* CodegenContext.swift in Sources */,
 				B8B97ECC1BF025C500CCFC4B /* main.swift in Sources */,
 				B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */,
 				B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */,
