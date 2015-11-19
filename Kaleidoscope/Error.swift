@@ -8,6 +8,7 @@ import KaleidoscopeLang
 public enum ErrorKind {
     case ParseError(KaleidoscopeLang.Error)
     case AnalysisError
+    case CodegenError
     case UnknownError
 }
 
@@ -37,5 +38,8 @@ extension Error {
     }
     public static func analysisError(message: String) -> Error {
         return Error(kind: .AnalysisError, message: message)
+    }
+    public static func codegenError(message: String) -> Error {
+        return Error(kind: .CodegenError, message: message)
     }
 }
