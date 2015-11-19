@@ -14,6 +14,13 @@
 		B8A9A6EF1BFBE27C00EC8D1A /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */; };
 		B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7321BFD976E00EC8D1A /* Error.swift */; };
 		B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */; };
+		B8A9A73A1BFDE2D500EC8D1A /* NumberCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7391BFDE2D500EC8D1A /* NumberCodegen.swift */; };
+		B8A9A73C1BFDE2E100EC8D1A /* VariableCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A73B1BFDE2E100EC8D1A /* VariableCodegen.swift */; };
+		B8A9A73E1BFDE2ED00EC8D1A /* BinaryOperatorCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A73D1BFDE2ED00EC8D1A /* BinaryOperatorCodegen.swift */; };
+		B8A9A7401BFDE2F600EC8D1A /* CallCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A73F1BFDE2F600EC8D1A /* CallCodegen.swift */; };
+		B8A9A7421BFDE30400EC8D1A /* PrototypeCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7411BFDE30400EC8D1A /* PrototypeCodegen.swift */; };
+		B8A9A7441BFDE31400EC8D1A /* FunctionCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */; };
+		B8A9A7461BFDE36300EC8D1A /* CodegenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7451BFDE36300EC8D1A /* CodegenUtils.swift */; };
 		B8B97EB21BF018B900CCFC4B /* KaleidoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B97EB11BF018B900CCFC4B /* KaleidoscopeTests.swift */; };
 		B8B97EBD1BF0205400CCFC4B /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; };
 		B8B97EBE1BF0205400CCFC4B /* Either.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -61,6 +68,13 @@
 		B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		B8A9A7321BFD976E00EC8D1A /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherExtensions.swift; sourceTree = "<group>"; };
+		B8A9A7391BFDE2D500EC8D1A /* NumberCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCodegen.swift; sourceTree = "<group>"; };
+		B8A9A73B1BFDE2E100EC8D1A /* VariableCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableCodegen.swift; sourceTree = "<group>"; };
+		B8A9A73D1BFDE2ED00EC8D1A /* BinaryOperatorCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryOperatorCodegen.swift; sourceTree = "<group>"; };
+		B8A9A73F1BFDE2F600EC8D1A /* CallCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallCodegen.swift; sourceTree = "<group>"; };
+		B8A9A7411BFDE30400EC8D1A /* PrototypeCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeCodegen.swift; sourceTree = "<group>"; };
+		B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionCodegen.swift; sourceTree = "<group>"; };
+		B8A9A7451BFDE36300EC8D1A /* CodegenUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodegenUtils.swift; sourceTree = "<group>"; };
 		B8B97E9E1BF018B900CCFC4B /* kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B97EA81BF018B900CCFC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B97EAD1BF018B900CCFC4B /* KaleidoscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaleidoscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +115,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8A9A7381BFDE2BA00EC8D1A /* Codegen */ = {
+			isa = PBXGroup;
+			children = (
+				B8A9A7451BFDE36300EC8D1A /* CodegenUtils.swift */,
+				B8A9A7391BFDE2D500EC8D1A /* NumberCodegen.swift */,
+				B8A9A73B1BFDE2E100EC8D1A /* VariableCodegen.swift */,
+				B8A9A73D1BFDE2ED00EC8D1A /* BinaryOperatorCodegen.swift */,
+				B8A9A73F1BFDE2F600EC8D1A /* CallCodegen.swift */,
+				B8A9A7411BFDE30400EC8D1A /* PrototypeCodegen.swift */,
+				B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */,
+			);
+			path = Codegen;
+			sourceTree = "<group>";
+		};
 		B8B97E951BF018B900CCFC4B = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +154,7 @@
 				B8B97ECB1BF025C500CCFC4B /* main.swift */,
 				B8A9A6E81BFB354A00EC8D1A /* Codegenable.swift */,
 				B8A9A6EA1BFB363800EC8D1A /* CodegenContext.swift */,
+				B8A9A7381BFDE2BA00EC8D1A /* Codegen */,
 				B8A9A6EE1BFBE27C00EC8D1A /* Analysis.swift */,
 				B8A9A7321BFD976E00EC8D1A /* Error.swift */,
 				B8A9A7361BFDA18800EC8D1A /* EitherExtensions.swift */,
@@ -268,8 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A9A6EB1BFB363800EC8D1A /* CodegenContext.swift in Sources */,
+				B8A9A7461BFDE36300EC8D1A /* CodegenUtils.swift in Sources */,
+				B8A9A73C1BFDE2E100EC8D1A /* VariableCodegen.swift in Sources */,
 				B8B97ECC1BF025C500CCFC4B /* main.swift in Sources */,
+				B8A9A7421BFDE30400EC8D1A /* PrototypeCodegen.swift in Sources */,
+				B8A9A7401BFDE2F600EC8D1A /* CallCodegen.swift in Sources */,
+				B8A9A73E1BFDE2ED00EC8D1A /* BinaryOperatorCodegen.swift in Sources */,
 				B8A9A7371BFDA18800EC8D1A /* EitherExtensions.swift in Sources */,
+				B8A9A7441BFDE31400EC8D1A /* FunctionCodegen.swift in Sources */,
+				B8A9A73A1BFDE2D500EC8D1A /* NumberCodegen.swift in Sources */,
 				B8A9A6E91BFB354A00EC8D1A /* Codegenable.swift in Sources */,
 				B8A9A7331BFD976E00EC8D1A /* Error.swift in Sources */,
 				B8A9A6EF1BFBE27C00EC8D1A /* Analysis.swift in Sources */,
