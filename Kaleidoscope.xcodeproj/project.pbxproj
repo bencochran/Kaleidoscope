@@ -22,6 +22,7 @@
 		B8A9A7441BFDE31400EC8D1A /* FunctionCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */; };
 		B8A9A7461BFDE36300EC8D1A /* CodegenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7451BFDE36300EC8D1A /* CodegenUtils.swift */; };
 		B8A9A7481BFDF84A00EC8D1A /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7471BFDF84A00EC8D1A /* IO.swift */; };
+		B8A9A74A1BFEE63200EC8D1A /* MainCodegen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A7491BFEE63200EC8D1A /* MainCodegen.swift */; };
 		B8A9A74C1BFEE79A00EC8D1A /* MainExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A9A74B1BFEE79A00EC8D1A /* MainExpression.swift */; };
 		B8B97EB21BF018B900CCFC4B /* KaleidoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B97EB11BF018B900CCFC4B /* KaleidoscopeTests.swift */; };
 		B8B97EBD1BF0205400CCFC4B /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B97EBC1BF0205400CCFC4B /* Either.framework */; };
@@ -78,6 +79,7 @@
 		B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionCodegen.swift; sourceTree = "<group>"; };
 		B8A9A7451BFDE36300EC8D1A /* CodegenUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodegenUtils.swift; sourceTree = "<group>"; };
 		B8A9A7471BFDF84A00EC8D1A /* IO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
+		B8A9A7491BFEE63200EC8D1A /* MainCodegen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCodegen.swift; sourceTree = "<group>"; };
 		B8A9A74B1BFEE79A00EC8D1A /* MainExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainExpression.swift; sourceTree = "<group>"; };
 		B8B97E9E1BF018B900CCFC4B /* kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B97EA81BF018B900CCFC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				B8A9A73F1BFDE2F600EC8D1A /* CallCodegen.swift */,
 				B8A9A7411BFDE30400EC8D1A /* PrototypeCodegen.swift */,
 				B8A9A7431BFDE31400EC8D1A /* FunctionCodegen.swift */,
+				B8A9A7491BFEE63200EC8D1A /* MainCodegen.swift */,
 			);
 			path = Codegen;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A9A6EB1BFB363800EC8D1A /* CodegenContext.swift in Sources */,
+				B8A9A74A1BFEE63200EC8D1A /* MainCodegen.swift in Sources */,
 				B8A9A7461BFDE36300EC8D1A /* CodegenUtils.swift in Sources */,
 				B8A9A73C1BFDE2E100EC8D1A /* VariableCodegen.swift in Sources */,
 				B8A9A74C1BFEE79A00EC8D1A /* MainExpression.swift in Sources */,
