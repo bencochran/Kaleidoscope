@@ -1,2 +1,3 @@
 github "bencochran/KaleidoscopeLang" "c5fdc20481019fbf489542edb7d2c7c1efa4b381"
 github "bencochran/LLVM.swift" "e31992709b6a8c850b15a953580702d22f6f9fc5"
+github "robrix/Either" ~> 1.3.1
