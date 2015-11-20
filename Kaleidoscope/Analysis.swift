@@ -37,8 +37,10 @@ struct Analyzer {
             return self.analyzeVariable(variable).map(id)
         case _ as NumberExpression:
             return .right(expression)
+        case let main as MainExpression:
+            return self.analyzeMain(main).map(id)
         default:
-            return .left(.analysisError("Unknown expression type `\(Mirror(reflecting: expression))`"))
+            return .left(.analysisError("Unknown expression type `\(Mirror(reflecting: expression).subjectType)`"))
         }
     }
     
@@ -74,6 +76,24 @@ struct Analyzer {
         return result.map(const(function))
     }
     
+    /// Analyzes the main function given the current analyzer state and returns an Error or the re-wrapped MainExpression
+    mutating func analyzeMain(function: MainExpression) -> Either<Error, MainExpression> {
+        if let (existingArgCount, isDefined) = prototypes["main"] {
+            if isDefined {
+                return .left(.analysisError("`main` is already defined"))
+            }
+            if existingArgCount != 0 {
+                return .left(.analysisError("`main` already declared with a different argument count"))
+            }
+        }
+        prototypes["main"] = (argCount: 0, isDefined: true)
+
+        scopes.append([])
+        let result = analyzeExpression(function.body)
+        scopes.removeLast()
+        return result.map(const(function))
+    }
+
     /// Analyzes the binary operator given the current analyzer state and returns an Error or the re-wrapped BinaryOperatorExpression
     mutating func analyzeBinaryOperator(binaryOperator: BinaryOperatorExpression) -> Either<Error, BinaryOperatorExpression> {
         // TODO check for known operator
