@@ -24,8 +24,8 @@ extension FunctionExpression : Codegenable {
     }
 }
 
-private extension CodegenContext {
-    func addArguments(args: [String])(toFunction function: Function) -> Either<Error, Function> {
+internal extension CodegenContext {
+    private func addArguments(args: [String])(toFunction function: Function) -> Either<Error, Function> {
         return args
             .enumerate()
             .map({ ($1, function.paramAtIndex(UInt32($0))) })
@@ -51,7 +51,7 @@ private extension CodegenContext {
         return returnValue &&& verifyFunction(function) >>- const(.right(function))
     }
     
-    private func verifyFunction(function: Function) -> Either<Error, ValueType> {
+    internal func verifyFunction(function: Function) -> Either<Error, ValueType> {
         guard function.verify() else {
             return .left(.codegenError("Unable to verify `\(function.name ?? "(null)")`"))
         }

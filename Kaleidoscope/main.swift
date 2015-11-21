@@ -9,6 +9,7 @@
 import KaleidoscopeLang
 import LLVM
 import Either
+import Prelude
 
 var stdout = OutputStream.Out
 var stderr = OutputStream.Err
@@ -17,15 +18,22 @@ let context = CodegenContext(moduleName: "kaleidoscope", context: Context.global
 
 let lines = [
     "extern addThree(a b c);",
+    "def main() addThree(1 2 3);",
     "def add(a b) a + b;",
     "def addThree(x y z) add(add(x y) z);"
 ]
 
 let result = lines
-    // Parse each line and map errors to the correct type
-    // This is a crazier way to do this: (requires a `flip :: (a -> b -> c) -> b -> a -> c`)
-    //    .map(parseTopLevelExpression >>> Either<KaleidoscopeLang.Error,TopLevelExpression>.mapLeft |> flip <| Error.parseError)
-    .map { parseTopLevelExpression($0).mapLeft(Error.parseError).map({ $0 as Expression }) }
+    .map {
+        // Parse each expression
+        return parseTopLevelExpression($0)
+            // Wrap errors
+            .mapLeft(Error.parseError)
+            // Cast as Expression
+            .map(id)
+            // Lift `main` to a MainExpression
+            .flatMap(liftMain)
+    }
     // Compact the array of `Either`s into a single `Either` of `Array`
     .compact()
     // Analize the expressions
