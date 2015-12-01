@@ -21,6 +21,7 @@ func compileModule(lines: [String]) -> Either<Error, CodegenContext> {
 
 private func generateStandardLibrary(context: CodegenContext) -> Either<Error, CodegenContext> {
     return generatePutchard(context)
+        &&& generatePrintd(context)
         >>- const(.right(context))
 }
 
@@ -67,8 +68,9 @@ var stderr = OutputStream.Err
 
 let lines = [
     "extern putchard(x);",
+    "extern printd(x);",
     "extern addThree(a b c);",
-    "def main() putchard(addThree(1 2 39));",
+    "def main() printd(addThree(1 2 -10.5));",
     "def add(a b) a + b;",
     "def addThree(x y z) add(add(x y) z);"
 ]
