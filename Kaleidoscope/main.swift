@@ -69,8 +69,9 @@ var stderr = OutputStream.Err
 let lines = [
     "extern putchard(x);",
     "extern printd(x);",
+    "def printlnd(d) printd(d) + putchard(10);", // Kind of a hack using addition here, but just go with it
     "extern addThree(a b c);",
-    "def main() printd(addThree(1 2 -10.5));",
+    "def main() printlnd(addThree(1 2 -10.5));",
     "def add(a b) a + b;",
     "def addThree(x y z) add(add(x y) z);"
 ]
