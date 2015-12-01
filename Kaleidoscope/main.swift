@@ -14,7 +14,14 @@ import Prelude
 func compileModule(lines: [String]) -> Either<Error, CodegenContext> {
     let context = CodegenContext(moduleName: "kaleidoscope", context: Context.globalContext)
 
-    return compile(lines, inContext: context) >>- const(.right(context))
+    return Either.right(lines) &&& generateStandardLibrary(context)
+        >>- compile
+        >>- const(.right(context))
+}
+
+private func generateStandardLibrary(context: CodegenContext) -> Either<Error, CodegenContext> {
+    return generatePutchard(context)
+        >>- const(.right(context))
 }
 
 private func compile(lines: [String], inContext context: CodegenContext) -> Either<Error, [ValueType]> {
@@ -59,8 +66,9 @@ var stderr = OutputStream.Err
 
 
 let lines = [
+    "extern putchard(x);",
     "extern addThree(a b c);",
-    "def main() addThree(1 2 3);",
+    "def main() putchard(addThree(1 2 39));",
     "def add(a b) a + b;",
     "def addThree(x y z) add(add(x y) z);"
 ]
