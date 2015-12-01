@@ -53,9 +53,7 @@ extension SequenceType where Generator.Element : EitherType {
 extension EitherType where RightType : SequenceType {
     /// Returns the `compact`ed result of applying `transform` to each of the `Right` values or re-wraps `Left`
     func flatMapEach<V>(@noescape transform: RightType.Generator.Element -> Either<LeftType, V>) -> Either<LeftType, [V]> {
-        return either(
-            ifLeft: Either<LeftType, [V]>.left,
-            ifRight: { $0.flatMap(transform).compact() })
+        return flatMap { $0.flatMap(transform).compact() }
     }
 
     /// Maps each `Right` value with `transform`, or re-wraps `Left`.
