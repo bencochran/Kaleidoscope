@@ -5,6 +5,7 @@
 
 import Either
 import Prelude
+import Darwin
 
 // These are in Either’s upstream, but not released yet and Madness is bringing in Either, so…
 extension Either {
@@ -18,6 +19,21 @@ extension Either {
         return either(
             ifLeft: transform,
             ifRight: Either<V, U>.right)
+    }
+}
+
+extension Either {
+    /// Prints the left or right to `leftStream` or `rightStream` respectively
+    /// and terminates the program with exit code 1 for left or 0 for right.
+    @noreturn func materialize<OutTarget: OutputStreamType, ErrorTarget: OutputStreamType>(inout leftStream leftStream: OutTarget, inout rightStream: ErrorTarget) {
+        switch self {
+        case let .Left(left):
+            print(left, toStream: &leftStream)
+            exit(1)
+        case let .Right(right):
+            print(right, toStream: &rightStream)
+            exit(0)
+        }
     }
 }
 
@@ -53,9 +69,7 @@ extension SequenceType where Generator.Element : EitherType {
 extension EitherType where RightType : SequenceType {
     /// Returns the `compact`ed result of applying `transform` to each of the `Right` values or re-wraps `Left`
     func flatMapEach<V>(@noescape transform: RightType.Generator.Element -> Either<LeftType, V>) -> Either<LeftType, [V]> {
-        return either(
-            ifLeft: Either<LeftType, [V]>.left,
-            ifRight: { $0.flatMap(transform).compact() })
+        return flatMap { $0.flatMap(transform).compact() }
     }
 
     /// Maps each `Right` value with `transform`, or re-wraps `Left`.
